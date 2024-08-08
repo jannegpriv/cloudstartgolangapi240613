@@ -13,7 +13,7 @@ var config Config
 var theRandom *rand.Rand
 
 func start(c *gin.Context) {
-	c.Data(http.StatusOK, "application/text", []byte("Tjena"))
+	c.JSON(http.StatusOK, gin.H{"Message": "Välkommen"})
 }
 
 func enableCors(c *gin.Context) {
