@@ -83,14 +83,6 @@ func main() {
 	router.GET("/", start)
 	router.GET("/api/play", apiPlay)
 	router.GET("/api/stats", apiStats)
-	// router.GET("/api/employee/:id", apiEmployeeById)
-	// router.PUT("/api/employee/:id", apiEmployeeUpdateById)
-	// router.DELETE("/api/employee/:id", apiEmployeeDeleteById)
-	// router.POST("/api/employee", apiEmployeeAdd)
-
-	// router.GET("/api/employees", employeesJson)
-	// router.GET("/api/addemployee", addEmployee)
-	// router.GET("/api/addmanyemployees", addManyEmployees)
 	router.Run(":8080")
 
 }
